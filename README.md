@@ -1,6 +1,43 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+<h1>CarSnap</h1>
+
+***App Name Subject to Change***
+
+Project for a mobile app for car enthusiasts that allows a user to upload or take a picture of a vehicle and identify its make, model, year, etc. This will then update a users catalog of vehicles that they have spotted on the road. These details can be logged with positional data (if provided/allowed by the user) and can be shared with friends.
+
+<!-- Cross-platform improvement on [CarSpotter](https://apps.apple.com/us/app/carspotter/id6742119749) [GitHub?](https://github.com/matthewlow04/AutoSpotter) -->
+
+Todo: clean up this readme
+
+# Getting Started (Our Notes)
+
+We plan to construce this app using [React Native](https://reactnative.dev/) for its ease of cross-platform development.
+
+## App Setup
+### For Andriod Development
+
+Whether you are developing on a Mac or a Windows computer, you will be able to install [Andriod Studio](https://developer.android.com/studio). This will allow you to build, test, and run code for Andriod users using the andriod emulator in Andriod Studio.
+
+### For iOS Development
+
+For Mac developers, this is relatively straight forward, you only need to download XCode, and use that for running and testing the code on an emulator.
+
+For Windows developers (like me), this is a bit trickier. The options are either to buy a Mac PC (not recommended unless you have extra $$ lying around), or you need to install a MacOS virtual Machine. This [YouTube video](https://www.youtube.com/watch?v=UkdBarxP4nw) (more useful links in video description) is super helpful for the process. We will put further instructions more or less custom to this project here if needed at a later date.
+
+
+## Vehicle Identification Setup
+
+We plan to use an AI based approach to the actual vehichle identification process.
+
+The details are still very much in the works but this will be updated when ideas have been confirmed.
+
+
+## Other Helpful Resources
+- [Vehicle OSINT Tool Collection](https://github.com/TheBurnsy/Vehicle-OSINT-Collection)
+
+
+# Getting Started (Official React Native Notes)
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 

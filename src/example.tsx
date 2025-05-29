@@ -1,5 +1,5 @@
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import type { PropsWithChildren } from 'react';
 import {
   ScrollView,
   StatusBar,
@@ -50,6 +50,54 @@ function Section({children, title}: SectionProps): React.JSX.Element {
   );
 }
 
+type InstructionProps = PropsWithChildren<{
+  backgroundStyle: { backgroundColor: any },
+  isDarkMode: boolean
+}>;
+
+// function Instruction({children, backgroundStyle, isDarkMode}: InstructionProps): React.JSX.Element {
+const Instruction = ({backgroundStyle, isDarkMode}: InstructionProps) => {
+  const safePadding = '5%';
+
+  console.log(backgroundStyle);
+  
+  return (
+    <View style={backgroundStyle}>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+        />
+      <ScrollView
+        style={backgroundStyle}>
+        <View style={{paddingRight: safePadding}}>
+          <Header/>
+        </View>
+        <View
+          style={{
+            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            paddingHorizontal: safePadding,
+            paddingBottom: safePadding,
+          }}>
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+            screen and then come back to see your edits.
+          </Section>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
+          </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
+        </View>
+      </ScrollView>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -68,3 +116,5 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
+
+export default Instruction;

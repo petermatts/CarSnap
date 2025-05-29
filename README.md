@@ -15,6 +15,11 @@ Todo: clean up this readme
 We plan to construce this app using [React Native](https://reactnative.dev/) for its ease of cross-platform development.
 
 ## App Setup
+
+### General Development
+
+Install [`react-devtools`](https://react.dev/learn/react-developer-tools)
+
 ### For Andriod Development
 
 Whether you are developing on a Mac or a Windows computer, you will be able to install [Andriod Studio](https://developer.android.com/studio). This will allow you to build, test, and run code for Andriod users using the andriod emulator in Andriod Studio.

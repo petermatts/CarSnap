@@ -30,6 +30,8 @@ For Mac developers, this is relatively straight forward, you only need to downlo
 
 For Windows developers (like me), this is a bit trickier. The options are either to buy a Mac PC (not recommended unless you have extra $$ lying around), or you need to install a MacOS virtual Machine. This [YouTube video](https://www.youtube.com/watch?v=UkdBarxP4nw) (more useful links in video description) is super helpful for the process. We will put further instructions more or less custom to this project here if needed at a later date.
 
+If you want to SSH into the VM, open its settings and under the NAT network adapter click on port forwarding and and add a port (name it what ever you'd like, I'd go with "SSH"). Add Host Port as 3022 and Guest Port as 22. Then to ssh into the VM run and sign into the VM. Then in terminal (or VSCode) run `ssh -p 3022 <account name within VM>:127.0.0.1`. You will then need to enter your VM account password to complete the process.
+
 
 ## Vehicle Identification Setup
 

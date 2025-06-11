@@ -6,7 +6,8 @@
 - [x] Setup Andriod Studio
 - [ ] Install any necessary dependencies for React Native
 - [ ] Select method of Car Identification (AI)
+  - [x] Make AI component its own repo 
+  - [ ] gitsubmodule the AI repo
   - [ ] Implement Federated Learning for continual app improvements
-  - [ ] Make AI component its own repo and gitsubmodule it?
 - [ ] Setup dataset
 - [ ] Design project phases

@@ -1,5 +1,3 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
 <h1>CarSnap</h1>
 
 ***App Name Subject to Change***
@@ -8,15 +6,27 @@ Project for a mobile app for car enthusiasts that allows a user to upload or tak
 
 <!-- Cross-platform improvement on [CarSpotter](https://apps.apple.com/us/app/carspotter/id6742119749) [GitHub?](https://github.com/matthewlow04/AutoSpotter) -->
 
-Todo: clean up this readme
 
-# Getting Started (Our Notes)
+# Getting Started
 
 We plan to construce this app using [React Native](https://reactnative.dev/) for its ease of cross-platform development.
 
-## App Setup
+## Storage Requirements
 
-### General Development
+For the entire project you may likely need 100+ GB of free storage on your machine depending on your machine and setup.
+
+- ~65GB App (this repo)
+  - Most of this is for the MacOS VM, the ISO file is 13GB alone... If you are on a Mac you don't need this.
+  - Andriod Studio (its chonky)
+  - A few GB for the app repo and dependencies
+- ~40GB AI/ML [CarSnap-AI Repo](https://github.com/petermatts/CarSnap-AI)
+  - ~5GB Python Virtual Environment (recommended)
+  - ~30GB Datasets
+  - An extra few GB for saved models and data
+
+## App Development Setup
+
+### General Development Tools
 
 Install [`react-devtools`](https://react.dev/learn/react-developer-tools)
 
@@ -32,23 +42,23 @@ For Windows developers (like me), this is a bit trickier. The options are either
 
 If you want to SSH into the VM, open its settings and under the NAT network adapter click on port forwarding and and add a port (name it what ever you'd like, I'd go with "SSH"). Add Host Port as 3022 and Guest Port as 22. Then to ssh into the VM run and sign into the VM. Then in terminal (or VSCode) run `ssh -p 3022 <account name within VM>:127.0.0.1`. You will then need to enter your VM account password to complete the process.
 
+> Todo: make a seperate `.md` file for this and link it here.
 
 ## Vehicle Identification Setup
 
-We plan to use an AI based approach to the actual vehichle identification process.
+We plan to use an AI based approach to the actual vehichle identification process. For details on this see our AI Repo: [CarSnap-AI](https://github.com/petermatts/CarSnap-AI).
 
-The details are still very much in the works but this will be updated when ideas have been confirmed.
-
-
-## Other Helpful Resources
-- [Vehicle OSINT Tool Collection](https://github.com/TheBurnsy/Vehicle-OSINT-Collection)
+<!-- ## Other Helpful Resources
+- [Vehicle OSINT Tool Collection](https://github.com/TheBurnsy/Vehicle-OSINT-Collection) -->
 
 
-# Getting Started (Official React Native Notes)
+
+
+## Running the App
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## Step 1: Start Metro
+### Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
@@ -62,11 +72,11 @@ npm start
 yarn start
 ```
 
-## Step 2: Build and run your app
+### Step 2: Build and run your app
 
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
-### Android
+#### Android
 
 ```sh
 # Using npm
@@ -76,7 +86,7 @@ npm run android
 yarn android
 ```
 
-### iOS
+#### iOS
 
 For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
 
@@ -106,7 +116,7 @@ If everything is set up correctly, you should see your new app running in the An
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
+### Step 3: Modify your app
 
 Now that you have successfully run the app, let's make changes!
 
@@ -117,20 +127,8 @@ When you want to forcefully reload, for example to reset the state of your app, 
 - **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
 - **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
+### Learn More
 
 To learn more about React Native, take a look at the following resources:
 
